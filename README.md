@@ -1,4 +1,5 @@
 # Qwen2.5-0.5B Medical LoRA Fine-Tuning Tutorial
+<img width="1279" height="733" alt="image" src="https://github.com/user-attachments/assets/19dc9c6e-1f4e-4320-b0e4-21f592831cd9" />
 
 A hands-on learning project for LLM fine-tuning. 7 modules covering the full pipeline: data processing, SFT training, inference comparison, and ablation experiments.
 
