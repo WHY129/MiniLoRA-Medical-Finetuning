@@ -1,5 +1,17 @@
 # Qwen2.5-0.5B Medical LoRA Fine-Tuning Tutorial
-<img width="1279" height="733" alt="image" src="https://github.com/user-attachments/assets/19dc9c6e-1f4e-4320-b0e4-21f592831cd9" />
+## My Reproduction and Extension
+
+I reproduced the LoRA fine-tuning pipeline for Qwen2.5-0.5B-Instruct on a Chinese medical question-answering dataset.
+
+I further conducted a LoRA rank ablation study with r = 4, 8, and 16 to compare parameter efficiency and validation performance.
+
+| Rank | Trainable Parameters | Train Loss | Eval Loss |
+|---|---:|---:|---:|
+| 4 | 2,199,552 | 3.009 | 2.717 |
+| 8 | 4,399,104 | 2.944 | 2.649 |
+| 16 | 8,798,208 | 2.941 | 2.567 |
+
+I also compared the base model and the LoRA fine-tuned model on five medical questions. The fine-tuned model showed stronger domain-specific response characteristics, while some outputs also revealed repetition and potentially unreliable advice, highlighting the importance of data quality and model evaluation.
 
 A hands-on learning project for LLM fine-tuning. 7 modules covering the full pipeline: data processing, SFT training, inference comparison, and ablation experiments.
 
